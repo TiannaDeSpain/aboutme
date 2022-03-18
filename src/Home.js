@@ -3,8 +3,11 @@ import album from './album.png';
 import book from './book.png';
 import pericles from './pericles.png';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
+
+ // JSX for home page
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +18,7 @@ function App() {
         <p style = {{"width" : "50vw", "font-size" : "25px"}}>
           I am 23 years old, I live in Idaho, and I have a goldendoodle. My favorite passtimes are cooking, art and coding!
         </p>
+        <button style = {{"background-color": "lightBlue"}}><Link to="/signup"> Click here to subscribe </Link></button>
         </header>
         <body style = {{"width" : "100vw"}}>
           <p>I have done some graphic design work this semester. Take a look!
